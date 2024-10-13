@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="C:\Users\Sony\Desktop\JS Tutorial\style.css"> <!-- Ensure the path is correct -->
+    <style>
+        body {
+            background-color: rgb(235, 235, 15); /* Just for testing */
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO List</h1>
+    <input id="input" placeholder="Add a new task...">
+    <button onclick="add()"><h4>ADD</h4></button>
+    <ul id="list-container"></ul>
+
+    <script>
+        var input = document.getElementById("input");
+        var ul = document.getElementById("list-container");
+
+        function add() {
+            if (input.value.trim() === "") return; // Prevent adding empty items
+
+            var listitem = document.createElement("li");
+            listitem.innerHTML = input.value + ' <button onclick="deleteItem(event)">Delete</button>';
+            ul.appendChild(listitem); // Append the new item
+            input.value = ""; // Clear the input
+        }
+
+        function deleteItem(event) {
+            event.target.parentElement.remove(); // Remove the list item
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    text-align: center; /* Center-aligns the body content */
+    font-family: Arial, sans-serif; /* Sets a font for better readability */
+    background-color: #f0f0f0; /* Light gray background color */
+    color: #333; /* Dark text color */
+}
+
+h1 {
+    color: #2c3e50; /* Dark blue color for the heading */
+}
+
+input {
+    margin: 30px; /* Adds space around the input field */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button {
+    margin-left: 5px; /* Adds space between the input and the button */
+    /* color: blue; */
+    background-color: rgb(115, 115, 245);
+    /* padding: 15px; */
+    border-radius: 10px;
+    font-size: medium;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes padding */
+}
